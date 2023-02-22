@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Volkhov:wght@400;700&display=swap');
+
+:root {
+    --primary-yellow: #F1A501;
+    --second-yellow: #ec8004;
+
+    --primary-orange: #DF6951;
+    --second-orange: #be402f;
+
+    --heading: #181E4B;
+    --desc: #5E6282;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-full {
+    width: 100%;
+}
+
+.hero-image {
+    width: 90%;
+}
+
+
+.p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+.btn-primary {
+    background-color: var(--primary-yellow);
+    border-color: var(--primary-yellow);
+}
+
+.btn-primary:hover {
+    background-color: var(--second-yellow);
+    border-color: var(--second-yellow);
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--heading);
+    --bs-btn-border-color: var(--heading);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--heading);
+    --bs-btn-hover-border-color: var(--heading);
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--heading);
+    --bs-btn-active-border-color: var(--heading);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--heading);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--heading);
+    --bs-gradient: none
+}
+
+.btn-outline-secondary:hover {
+    color: #fff !important;
+}
+
+/* ====================================
+Navbar
+======================================= */
+.main-nav {
+    padding: 40px 0;
+}
+
+.wrapper-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    gap: 56px;
+}
+
+.wrapper-menu li {
+    list-style: none;
+}
+
+.wrapper-menu li a {
+    color: var(--heading);
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.wrapper-menu li a:hover {
+    color: #000;
+}
+
+.wrapper-dropdown {
+    background: transparent;
+    border: none;
+}
+
+/* ====================================
+Hero
+======================================= */
+
+#hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-decore {
+    position: absolute;
+    width: 766.31px;
+    height: 882.58px;
+    right: 0;
+    top: -149px;
+    z-index: -999;
+}
+
+.left-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.left-hero-text h4 {
+    color: var(--primary-orange);
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.left-hero-text h1 {
+    font-family: 'Volkhov', serif;
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 89px;
+    letter-spacing: -0.04em;
+    color: var(--heading);
+}
+
+.hero-image {
+    width: 90%;
+}
+
+.decor-underline {
+    position: relative;
+    z-index: -1;
+}
+
+.decor-underline::after {
+    content: '';
+    height: 10px;
+    background: url(../img/Decore-1.svg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    bottom: 20px;
+    left: -15px;
+    right: -80px;
+    z-index: -2;
+}
+
+.left-hero-text p {
+    color: var(--desc);
+    margin: 30px 0;
+}
+
+.button-hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button-hero .play-demo {
+    margin-left: 44px;
+}
+
+.play-demo .btn-play {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-play p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.btn-play .btn-rounded {
+    width: 52px;
+    height: 52px;
+    background-color: var(--primary-orange);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-play .btn-rounded:hover {
+    background-color: var(--second-orange);
+}
+
+/* ====================================
+Category
+======================================= */
+#category {
+    padding: 80px 0;
+}
+
+.subtitle-section {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--desc);
+}
+
+.decora-section {
+    position: absolute;
+    width: 155px;
+    height: 165px;
+    right: 10%;
+    margin-top: -20px;
+    z-index: -5;
+}
+
+.title-section {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 64.5px;
+    text-align: center;
+    font-family: 'Volkhov', serif;
+    color: var(--heading);
+    margin-bottom: 56px;
+}
+
+.item-service {
+    padding: 20px 40px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icon-service {
+    text-align: center;
+    margin-bottom: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-service:hover {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.item-service:hover:after {
+    content: '';
+    position: absolute;
+    left: -35px;
+    bottom: -33px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-orange);
+    border-radius: 30px 0 10px;
+    z-index: -1;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.item-service h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--heading);
+}
+
+.item-service p {
+    text-align: center;
+    color: var(--desc);
+    line-height: 26px;
+}
+
+/* ====================================
+Top sale
+======================================= */
+#section {
+    padding: 80px 0;
+}
+
+.box-destination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-destination {
+    height: 520px;
+    width: 355px;
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    overflow: hidden;
+    position: relative;
+}
+
+.item-destination img {
+    height: 100%;
+}
+
+.item-destination:hover .description {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    transition: 0.4s ease-in-out;
+}
+
+.item-destination .description {
+    background-color: #fff;
+    width: 100%;
+    height: 147px;
+    position: absolute;
+    bottom: 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    transition: 0.4s ease-in-out;
+}
+
+.description .location {
+    display: flex;
+    justify-content: space-between;
+    color: var(--desc);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0px 22px;
+    padding-top: 30px;
+}
+
+.description .days {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    margin: 0px 22px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--desc);
+    align-items: center;
+}
+
+.days img {
+    height: 18px;
+    width: 18px;
+    margin-right: 17px;
+}
+
+.days p {
+    margin: 0;
+}
+
+/* ====================================
+=======================================
+======================================= */
+@media(max-width:1199px) {
+
+    /* Navbar */
+    .main-nav {
+        padding: 25px 0;
+    }
+
+    .wrapper-menu {
+        gap: 36px;
+    }
+
+    .decora-section {
+        height: 90px;
+        width: 100px;
+    }
+
+    /* hero */
+    .hero-image {
+        width: 100%;
+    }
+
+    /* Top sele */
+    .box-destination {
+        margin-top: 30px;
+    }
+
+}
+
+@media(max-width:991px) {
+
+    /* Navbar */
+    .wrapper-menu.show {
+        right: 0;
+    }
+
+    .wrapper-menu {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        right: -100vw;
+        bottom: 0;
+        background-color: rgb(255 255 255/87%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        z-index: 999;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+
+    ul.wrapper-menu {
+        flex-direction: column;
+    }
+
+    .logo {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .hamburger {
+        width: 50px;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .main-nav .dropdown-menu.show {
+        margin: 0px;
+        transform: translate3d(-50%, 28px, 0px) !important;
+        left: 50% !important;
+        text-align: center;
+    }
+
+    /* Hero */
+    #hero {
+        flex-direction: column;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .row-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .hero-decore {
+        width: 600px;
+        height: 820px;
+    }
+
+    .left-hero-text {
+        padding: 70px 0;
+    }
+
+    /* Category */
+
+    .item-service {
+        margin: 0 40px;
+    }
+}
+
+@media(max-width:576px) {
+
+    /* Navbar */
+
+    /* Hero */
+    .hero-decore {
+        width: 440px;
+        height: 750px;
+    }
+
+    .left-hero-text h4 {
+        font-size: 16px;
+    }
+
+    .left-hero-text h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .decor-underline::after {
+        bottom: 10px;
+        left: -10px;
+        right: -60px;
+    }
+
+    .left-hero-text p {
+        margin: 20px 0;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .button-hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .button-hero .play-demo {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    /* Category */
+    .title-section {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
